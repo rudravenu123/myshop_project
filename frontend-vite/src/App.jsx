@@ -11,7 +11,7 @@ function App() {
 
   // 🔥 FETCH PRODUCTS
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/products/")
+    axios.get("https://myshop-backend-f6r1.onrender.com/products/")
       .then(res => setProducts(res.data))
       .catch(err => console.log(err));
   }, []);
